@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jarvis Assistant</title>
+  <style>
+    body {
+      background: #0f0f0f;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      color: #00ffcc;
+    }
+
+    #response {
+      background: #222;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 600px;
+      min-height: 100px;
+    }
+
+    button {
+      background-color: #00ffcc;
+      color: #000;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #00ccaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>🤖 Jarvis Ready</h1>
+  <button onclick="startListening()">🎤 Speak to Jarvis</button>
+  <div id="response">Jarvis will reply here...</div>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
